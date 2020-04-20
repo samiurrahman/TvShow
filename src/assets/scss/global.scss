@@ -1,0 +1,21 @@
+// Global SCSS
+
+:root { // Set root Font size to 10px means 1rem = 10px easy to calculate
+    font-size: 10px;
+}
+a {
+    text-decoration: none;
+    background-color: transparent;
+    color: #081827 !important;
+}
+@mixin flexCenter { // makes Center element
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    color: #606060;
+}
