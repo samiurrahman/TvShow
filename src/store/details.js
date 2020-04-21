@@ -7,7 +7,7 @@ export default {
     cast: [],
     season: [],
     loading: false,
-    error: false
+    error: ''
   },
   mutations: {
     TV_SHOWS(state, payload) {
@@ -21,6 +21,9 @@ export default {
     },
     LOADING(state, payload) {
       state.loading = payload
+    },
+    ERRORS(state, payload) {
+      state.error = payload
     }
   },
   actions: {
@@ -33,7 +36,7 @@ export default {
           commit('LOADING', false)
         })
         .catch(error => {
-          console.log(error)
+          commit('ERRORS', error)
         })
     },
     getTvShowSeasonDetailsById({ commit }, payload) {
@@ -44,7 +47,7 @@ export default {
           commit('LOADING', false)
         })
         .catch(error => {
-          console.log(error)
+          commit('ERRORS', error)
         })
     }
   },

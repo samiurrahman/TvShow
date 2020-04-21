@@ -1,5 +1,5 @@
 <template>
-  <div class="Details grey lighten-5">
+  <div class="grey lighten-5">
     <v-container>
       <v-row no-gutters>
         <v-col
@@ -179,7 +179,7 @@ export default {
         font-size: 1.4rem;
         .ratings {
           margin-right: 1rem;
-          color: #9b9b9b;
+          color: $ABNRatingsColor;
         }
       }
       .showBiodata {
@@ -188,7 +188,7 @@ export default {
           font-family: 'Open Sans', sans-serif;
           font-size: 1.4rem;
           line-height: 2.6rem;
-          color: #606060;
+          color: $Para;
           .title {
             width: 10.5rem;
             display: inline-block;
@@ -221,9 +221,6 @@ p.showSummary {
     text-align: center;
     margin-right: 3rem;
     width: 9rem;
-    /* overflow: hidden; */
-    /* text-overflow: ellipsis; */
-    /* white-space: nowrap; */
     margin-bottom: 2rem;
     a {
       color: inherit;

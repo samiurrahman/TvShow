@@ -13,7 +13,8 @@ export default new Vuex.Store({
     detail
   },
   state: {
-    results: []
+    results: [],
+    error: ''
   },
   mutations: {
     UPDATE_RESULT(state, payload) {
@@ -21,6 +22,9 @@ export default new Vuex.Store({
     },
     CLEAR(state) {
       state.results = []
+    },
+    ERRORS(state, payload) {
+      state.error = payload
     }
   },
   actions: {
@@ -30,7 +34,7 @@ export default new Vuex.Store({
           commit('UPDATE_RESULT', res)
         })
         .catch(error => {
-          console.log(error)
+          commit('ERRORS', error)
         })
     },
     clearResult({ commit }) {

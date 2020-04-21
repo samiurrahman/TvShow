@@ -1,5 +1,5 @@
 <template>
-  <div class="Dashboard grey lighten-5">
+  <div class="grey lighten-5">
     <v-container>
       <v-row no-gutters :class="$style.dashBoardWrapper">
         <v-col cols="12" sm="12" md="12" :class="$style.category">

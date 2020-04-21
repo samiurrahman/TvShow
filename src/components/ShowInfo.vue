@@ -1,7 +1,7 @@
 <template>
-  <div :class="$style.showinfo">
+  <div :class="$style.showInfo">
     <img :src="img" :alt="name" />
-    <div :class="$style.showinfoBody">
+    <div :class="$style.showInfoBody">
       <h5 :class="$style.title">{{ name }}</h5>
       <p>{{ subTitle }}</p>
     </div>
@@ -26,8 +26,8 @@ export default {
 </script>
 
 <style lang="scss" module>
-.showinfo {
-  border-bottom: 0.1rem dashed #9b9b9b;
+.showInfo {
+  border-bottom: 0.1rem dashed $Info;
   padding-top: 2.3rem;
   padding-bottom: 1.5rem;
   display: flex;
@@ -37,7 +37,7 @@ export default {
     margin-right: 1rem;
     box-shadow: rem 0rem 5rem 0rem rgba(0, 58, 115, 0.08);
   }
-  .showinfoBody {
+  .showInfoBody {
     flex: 1;
     .title {
       font-size: 1.8rem;
@@ -45,7 +45,7 @@ export default {
       font-weight: 400;
     }
     p {
-      color: #9b9b9b;
+      color: $Info;
     }
   }
   &:last-child {

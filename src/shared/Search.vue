@@ -64,10 +64,10 @@ export default {
     position: absolute;
     width: 100%;
     background-color: #fff;
-    color: #606060;
+    color: $Para;
     font-size: 1.2rem;
     padding-left: 0;
-    border: 0.1rem solid #606060;
+    border: 0.1rem solid $Para;
     border-radius: 2rem;
     z-index: 100;
     li {
