@@ -1,6 +1,5 @@
 # Tv Show Application
-This is open TV shows application that allows users to view list of all TV shows and their all details. this application usage API from "tvmaza" http://www.tvmaze.com/. 
-Note: Please access application in open network, if you face CORS issue.
+This is open TV shows application that allows users to view list of all TV shows and their all details. this application usage data http://www.tvmaze.com/. 
 
 ## Installation of vue/cli
 This application required Vue cli please install latest version. 
