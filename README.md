@@ -7,7 +7,8 @@ This application required Vue cli please install latest version.
 ```
 npm install -g @vue/cli
 ```
-Note: Please check Vue CLI is successfully installed. by running command: vue --version
+Note: Please check Vue CLI is successfully installed. by running command: vue --v
+if it prints version. you successfully installed Vue Cli
 
 ## Project setup
 ```
