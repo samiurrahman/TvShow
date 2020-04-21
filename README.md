@@ -53,7 +53,7 @@ and for files Pascal case for files exaple: DashBoard.vue, Details.vue
 * Axios (Promise based HTTP client for the browser) — [Axios](https://www.npmjs.com/package/axios/).
 * Vuex is a state management pattern + library for Vue.js — [Vuex ](https://vuex.vuejs.org/).
 * Jest for unit testing — [jest](https://jestjs.io/).
-* prettier for single quote & without semi colon
+* Prettier for single quote & without semi colon
 * It usage "rem" as CSS unit, which is related to root font size. we have set 10px as root font size.
 
 ### Customize configuration
