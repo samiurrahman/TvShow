@@ -44,9 +44,9 @@ Example : getResults() , tvShowName etc..
 and for files Pascal case for files exaple: DashBoard.vue, Details.vue
 
 * Vuex Standards: 
-    * mutations: ALL_CAPS example: ALL_TV_SHOWS
-    * actions: camelCase example: getTvShowDetailsById 
-    * state: camelCase ex: tvShow
+    * mutations: All Caps example: ALL_TV_SHOWS
+    * actions: CamelCase example: getTvShowDetailsById 
+    * state: CamelCase ex: tvShow
 
 ### Project dependencies
 * Vue Material Design Component Framework — [Vuetify.js](https://vuetifyjs.com/en/).
