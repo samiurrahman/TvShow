@@ -1,9 +1,27 @@
-// import { shallowMount } from '@vue/test-utils'
+import { shallowMount, createLocalVue } from '@vue/test-utils';
+import heading from '@/shared/Heading'
+ 
+describe('In Header Component', () => {
+  let appHeaderWrapper;
+  // const router = new VueRouter({ routes });
+ 
+  beforeEach(() => {
+    const localVue = createLocalVue(); 
+    appHeaderWrapper = shallowMount(heading, {
+      localVue,
+    });
+  });
+ 
+  afterEach(() => {
+    appHeaderWrapper.destroy();
+  });
+ 
+  it('is a Vue instance', () => {
+    expect(appHeaderWrapper.isVueInstance).toBeTruthy();
+  });
 
-// import heading from '@/shared/Heading.vue'
+  it('should have h1 tag', () => {
+    expect(appHeaderWrapper.html()).toContain('<h1></h1>');
+  });
 
-describe('heading.vue', () => {
-  it('heading Component exists', () => {
-    expect(true).toBe(true)
-  })
-})
+});
