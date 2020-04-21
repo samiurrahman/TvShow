@@ -11,7 +11,7 @@ axios.interceptors.request.use(
   },
   error => {
     // Do something
-    return error
+    return Promise.reject(error)
   }
 )
 
@@ -23,6 +23,6 @@ axios.interceptors.response.use(
   },
   error => {
     // Do something
-    return error
+    return Promise.reject(error)
   }
 )
