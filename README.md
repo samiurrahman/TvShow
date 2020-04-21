@@ -55,6 +55,10 @@ and for files Pascal case for files exaple: DashBoard.vue, Details.vue
 * Jest for unit testing — [jest](https://jestjs.io/).
 * Prettier for single quote & without semi colon
 * It usage "rem" as CSS unit, which is related to root font size. I have set 10px as root font size.
+* Node SASS is required
+   ```
+   npm install node-sass
+   ```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
