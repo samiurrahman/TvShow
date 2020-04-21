@@ -34,7 +34,7 @@ npm run test:unit
 ```
 npm run lint
 ```
-### Project Guidelines ------------
+### Project Guidelines
 * This application using camelCase naming conventions for Method Naming, variable, object declaration,
 Example : getResults() , tvShowName etc..
 
